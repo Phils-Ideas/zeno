@@ -12,5 +12,7 @@ test:
   override:
 
     # Test the app with Chrome and ensure all artifacts can be traced back to the chrome run
+    - pwd
+    - ls
     - meteor --test
 
