@@ -8,3 +8,7 @@ meteor-platform
 autopublish
 insecure
 xolvio:cucumber
+meteorhacks:kadira
+markdown
+meteorhacks:zones
+meteorhacks:kadira-profiler
