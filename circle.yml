@@ -1,0 +1,12 @@
+machine:
+  environment:
+    # Enable this to debug builds
+    #VELOCITY_DEBUG: true
+    SETTINGS_FILE: "settings.json"
+
+test:
+  override:
+
+    # Test the app with Chrome and ensure all artifacts can be traced back to the chrome run
+    - meteor --test
+
