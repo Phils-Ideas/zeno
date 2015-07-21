@@ -1,0 +1,9 @@
+{
+  "name": "markdown-gherkin-parser",
+  "version": "1.0.0",
+  "description": "Dependencies for the parser",
+  "private": true,
+  "devDependencies": {
+    "q": "^1.4.1"
+  }
+}
