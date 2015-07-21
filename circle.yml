@@ -8,5 +8,5 @@ test:
   override:
 
     # Test the app with Chrome and ensure all artifacts can be traced back to the chrome run
-    - meteor --test
+    - SELENIUM_BROWSER=chrome meteor --test
 
