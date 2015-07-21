@@ -3,7 +3,7 @@ Feature: Canvas page
 
   @web-application @dev
   Scenario: The customer sees the default canvas
-    Given I navigate to the default page of the zeno canvas site
+    Given I navigate to "/"
     Then I will see the following cards
       |THE DISRUPTION OPPORTUNITY|
       | DISRUPTIVE SOLUTION|
