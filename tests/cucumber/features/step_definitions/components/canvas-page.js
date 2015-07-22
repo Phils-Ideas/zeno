@@ -7,6 +7,7 @@ module.exports = function () {
         this.CanvasPage = {
 
             checkCards: function (table) {
+                //Hooked up to component from drag drop phase.
                 return client.
                     waitForExist('body');
             }
