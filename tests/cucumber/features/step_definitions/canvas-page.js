@@ -7,5 +7,8 @@
             return this.CanvasPage.checkCards(table);
         });
 
+        this.When(/^I click on a tag on a canvas item$/, function (callback) {
+            return this.EditorPage.navigateTo();
+        });
     };
 })();

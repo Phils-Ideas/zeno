@@ -13,3 +13,8 @@ markdown
 meteorhacks:zones
 meteorhacks:kadira-profiler
 twbs:bootstrap
+iron:router
+accounts-password
+accounts-ui
+accounts-github
+useraccounts:bootstrap

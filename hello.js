@@ -14,6 +14,17 @@ if (Meteor.isClient) {
       Session.set('counter', Session.get('counter') + 1);
     }
   });
+
+  Router.route('/', {
+    template: 'hello'
+  });
+  Router.route('zenoEditor', {
+    template: 'zenoEditor'
+  });
+  Router.route('login', {
+    template: 'loginModal'
+  });
+
 }
 
 if (Meteor.isServer) {

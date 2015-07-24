@@ -1,11 +1,24 @@
 <head>
-    <title>hello</title>
+    <title>zeno</title>
 </head>
 
 <body>
-{{> hello}}
-</body>
 
+</body>
+<template name="zenoEditor">
+    <h2>zenoEditor</h2>
+</template>
+<template name="register">
+    <h2>Register</h2>
+
+    <form class="register">
+        <p>Email: <input type="email" name="email"></p>
+
+        <p>Password: <input type="password" name="password"></p>
+
+        <p><input type="submit" value="Register"></p>
+    </form>
+</template>
 <template name="hello">
     <div class="navbar navbar-default" id="subnav">
         <div class="col-md-12">
@@ -19,9 +32,11 @@
 
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse2">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">Posts</a></li>
-                    <li><a href="#loginModal" role="button" data-toggle="modal">Login</a></li>
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="active"><a href="#">zeno-canvas</a></li>
+                    <li>
+                        <a href="#loginModal" role="button" data-toggle="modal">Login</a>
+                    </li>
                     <li><a href="#aboutModal" role="button" data-toggle="modal">About</a></li>
                 </ul>
             </div>
@@ -32,17 +47,25 @@
     <div class="container" id="main">
         <div class="row">
             <h1>zeno canvas!</h1>
-            <p>Expanding on the ideas of Ash M at http://leanstack.com/ the zeno canvas is hooked up to live data sources relevant to
-            the card type so you can see at a glance how your experiment is going. The idea is that each item in the zeno canvas can
-            choose from a range of sources and set ranges to create signals for the item. Then the items are aggregated for the card
-            and an overall signal worked out.</p>
 
-            <p>Sources can be Google Analytics, Kadira performance monitoring, build velocity, a payment gateway whatever you need for
-            a signal for the card items. Whats important is that as you are creating the items you are thinking how to measure and
-            report them. Think of this as TDD for the business.</p>
+            <p>Expanding on the ideas of Ash M at http://leanstack.com/ the zeno canvas is hooked up to live data
+                sources relevant to
+                the card type so you can see at a glance how your experiment is going. The idea is that each item in the
+                zeno canvas can
+                choose from a range of sources and set ranges to create signals for the item. Then the items are
+                aggregated for the card
+                and an overall signal worked out.</p>
+
+            <p>Sources can be Google Analytics, Kadira performance monitoring, build velocity, a payment gateway
+                whatever you need for
+                a signal for the card items. Whats important is that as you are creating the items you are thinking how
+                to measure and
+                report them. Think of this as TDD for the business.</p>
+
             <div class="col-md-4 col-sm-6">
                 <div class="panel panel-default">
-                    <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>THE DISRUPTION OPPORTUNITY</h4></div>
+                    <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>THE DISRUPTION
+                        OPPORTUNITY</h4></div>
                     <div class="panel-body">
                         What is the unreasonable and provocative idea? A real game changer. What market will disrupted?
                     </div>
@@ -55,9 +78,11 @@
                     </div>
                 </div>
                 <div class="panel panel-default">
-                    <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>CUSTOMER PROBLEMS</h4></div>
+                    <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>CUSTOMER PROBLEMS</h4>
+                    </div>
                     <div class="panel-body">
-                        What are the top problems faced by the target customer? Why are current alternatives inadequate or overshoot?
+                        What are the top problems faced by the target customer? Why are current alternatives inadequate
+                        or overshoot?
                     </div>
                 </div>
             </div>
@@ -71,28 +96,36 @@
                     </div>
                 </div>
                 <div class="panel panel-default">
-                    <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>UNIQUE VALUE PROPOSITION</h4></div>
+                    <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>UNIQUE VALUE
+                        PROPOSITION</h4></div>
                     <div class="panel-body">
-                        What is the unique value proposition? This is a single, clear compelling message that states why the solution is different and worth paying for.
+                        What is the unique value proposition? This is a single, clear compelling message that states why
+                        the solution is different and worth paying for.
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
                 <div class="panel panel-default">
-                    <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>KEY PERFORMANCE METRICS</h4>
+                    <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>KEY PERFORMANCE
+                        METRICS</h4>
                     </div>
                     <div class="panel-body">
                         What are the three key metrics that will demonstrate traction to founders and investors.
                         <ul>
-                            <li>@web-application <br>A web application where customers can use zeno canvas on a freemium style subscription.</li>
-                            <li>@feedback <br>Feedback from customers that can be voted on and commented on and highest ranked items will get priority in the roadmap.</li>
+                            <li><a href="/zenoEditor" role="button">@web-application</a><br>A web application where
+                                customers can use zeno canvas on a freemium style subscription.
+                            </li>
+                            <li>@feedback <br>Feedback from customers that can be voted on and commented on and highest
+                                ranked items will get priority in the roadmap.
+                            </li>
                             <li>@signal <br>At least 1 source to turn into a useful signal on the canvas.</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="panel panel-default">
-                    <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>TARGET CUSTOMERS</h4></div>
+                    <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>TARGET CUSTOMERS</h4>
+                    </div>
                     <div class="panel-body">
                         Who is the ideal target customer? Describe their persona
                     </div>
@@ -366,29 +399,14 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                    <h2 class="text-center"><img
-                            src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=100"
-                            class="img-circle"><br>Login</h2>
+                    <h2 class="text-center">Welcome</h2>
                 </div>
                 <div class="modal-body">
-                    <form class="form col-md-12 center-block">
-                        <div class="form-group">
-                            <input type="text" class="form-control input-lg" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control input-lg" placeholder="Password">
-                        </div>
-                        <div class="form-group">
-                            <button class="btn btn-primary btn-lg btn-block">Sign In</button>
-                            <span class="pull-right"><a href="#">Register</a></span><span><a href="#">Need
-                            help?</a></span>
-                        </div>
-                    </form>
+                    {{> loginButtons}}
+                    {{> atForm}}
                 </div>
                 <div class="modal-footer">
-                    <div class="col-md-12">
-                        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-                    </div>
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">OK</button>
                 </div>
             </div>
         </div>

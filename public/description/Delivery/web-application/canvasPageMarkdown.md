@@ -5,6 +5,7 @@ The main purpose of zeno canvas is to give the customer an easy way to fill out 
 ##The customer sees the default canvas
 1. I navigate to "/"
 3. I will see the following cards
+3. I will see the following cards
 
 |CARDS|
 |-------------|
