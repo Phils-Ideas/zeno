@@ -8,4 +8,4 @@ Feature: Add a book to the library
     And I fill out the registration form with valid data
     And I navigate to "/form2"
     When I fill out the book form with valid data
-    And break
+    And I navigate to "/form3"
