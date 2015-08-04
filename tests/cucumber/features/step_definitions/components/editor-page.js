@@ -11,13 +11,21 @@ module.exports = function () {
         this.EditorPage = {
 
             navigateTo: function () {
-                var completeUrl = url.resolve(process.env.ROOT_URL, '/zenoEditor');
+                var completeUrl = url.resolve(process.env.ROOT_URL, '/zeno-editor');
                 return client.url(completeUrl);
+
+            },
+            heading: function(){
+                return client.waitForExist('h1').getText('.zeno-editor h1');
             },
             title: function(){
-                //Hooked up to component from drag drop phase.
-                return client.
-                    waitForExist('body').getTitle();
+                return client.waitForExist('body').getTitle();
+            },
+            editorContent: function(){
+                return client.waitForExist('body').getTitle();
+            },
+            renderedEditorContent: function(){
+                return client.waitForExist('body').getText('.zeno-editor-content');
             }
         };
         done();

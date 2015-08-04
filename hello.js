@@ -18,13 +18,9 @@ if (Meteor.isClient) {
   Router.route('/', {
     template: 'hello'
   });
-  Router.route('zenoEditor', {
-    template: 'zenoEditor'
-  });
   Router.route('login', {
     template: 'loginModal'
   });
-
 }
 
 if (Meteor.isServer) {

@@ -18,3 +18,8 @@ accounts-password
 accounts-ui
 accounts-github
 useraccounts:bootstrap
+mizzao:sharejs
+mizzao:sharejs-ace
+aldeed:collection2
+aldeed:autoform
+aldeed:simple-schema
