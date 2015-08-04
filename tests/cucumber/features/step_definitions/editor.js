@@ -5,7 +5,11 @@
     'use strict';
     module.exports = function () {
         this.Then(/^I will see the A & D editor$/, function (callback) {
-            this.EditorPage.title().should.become('zeno').and.notify(callback);
+            return this.EditorPage.heading().should.become('zeno-editor');
+        });
+
+        this.Then(/^the formatted output$/, function (callback) {
+            this.EditorPage.renderedEditorContent().should.become('').and.notify(callback);
         });
     };
 })();
