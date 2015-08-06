@@ -1,0 +1,55 @@
+<template name="zenoEditor">
+    <h1>zeno-editor</h1>
+    <div class="container full-height">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row upper">
+            <div class="col-xs-1 full-height">
+                {{> docList}}
+            </div>
+            <div class="col-xs-11 editor-container full-height">
+                <div class="zeno-editor">
+                    <div class="col-lg-6">
+                        {{#with docid}}
+                            {{> sharejsAce docid=this onRender=configAce id="editor"}}
+                            {{> docTitle this}}
+                        {{/with}}
+                    </div>
+                </div>
+                <div class="zeno-editor-content">
+                    <div class="col-lg-5">
+                        {{#with docid}}
+                            {{#markdown}}{{document}}{{/markdown}}
+                        {{/with}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="docList">
+    <ul class="nav nav-pills nav-stacked" id="list">
+        {{#each documents}}
+            {{> docItem}}
+        {{/each}}
+    </ul>
+    <button class="btn btn-success">New Analysis</button>
+</template>
+
+<template name="docItem">
+    <li class="{{#if current}}active{{/if}}">
+        <a href="#">{{title}}</a>
+    </li>
+</template>
+
+<template name="docTitle">
+    <div class="navbar navbar-default">
+        <form class="navbar-form pull-left">
+            <input class="form-control" type="text" name="title" value="{{title}}">
+            <button class="btn btn-danger btn-small">Delete this document</button>
+        </form>
+    </div>
+</template>

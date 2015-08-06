@@ -1,5 +1,5 @@
 Router.route('/zeno-editor', {
-    template: 'zeno-editor'
+    template: 'zenoEditor'
 });
 Router.route('/form1', {
     template: 'form1'
